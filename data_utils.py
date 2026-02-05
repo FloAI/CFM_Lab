@@ -31,7 +31,7 @@ def _load_two_files(feature_file: str, metadata_file: str) -> DataTuple:
     if data_x.shape[0] == 0:
         raise ValueError("No matching samples found after aligning and cleaning two files.")
         
-    print(f"Loaded in 📚 Two-File Mode. Samples: {data_x.shape[0]}")
+    print(f"Loaded in Two-File Mode. Samples: {data_x.shape[0]}")
     return data_x, data_cond, data_x.shape[1], data_cond.shape[1]
 
 
@@ -57,10 +57,10 @@ def _load_single_csv(data_file: str, condition_column_name: Optional[str]) -> Da
         cond_dim = data_cond.shape[1]
         
         df_features = df_full.drop(columns=[condition_column_name])
-        print(f"Loaded in 📄 Single-File Mode. Condition column: {condition_column_name} (Dim: {cond_dim})")
+        print(f"Loaded in Single-File Mode. Condition column: {condition_column_name} (Dim: {cond_dim})")
         
     else:
-        print("Loaded in 📄 Single-File Mode (Unconditional).")
+        print("Loaded in Single-File Mode (Unconditional).")
 
     data_x = df_features.select_dtypes(include=[np.number]).values.astype(np.float32)
     x_dim = data_x.shape[1]
