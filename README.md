@@ -83,7 +83,7 @@ generated_samples = cfm_machine.sample(
 
 -----
 
-## 4\. 🔬 Supported Flow Matching Variants
+## 4\.  Supported Flow Matching Variants
 
 
 ***
@@ -187,7 +187,7 @@ This phase sets the stage by defining all parameters, including the CFM variant,
 
 ---
 
-## 2. 💾 Phase II: Data Loading and Preprocessing
+## 2.  Phase II: Data Loading and Preprocessing
 
 The library handles data preparation, transforming raw CSV inputs into processed PyTorch data loaders.
 
