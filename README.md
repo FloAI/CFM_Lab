@@ -20,7 +20,7 @@ pip install numpy pandas torch scikit-learn tqdm
 
 ### Library Structure
 
-The library requires a specific package structure. Ensure your repository contains the `metagenomics_cfm` directory with all the core Python files (e.g., `machine.py`, `config.py`, `coupling.py`).
+The library requires a specific package structure. Ensure your repository contains the `CFM_Lab` directory with all the core Python files (e.g., `machine.py`, `config.py`, `coupling.py`).
 
 -----
 
