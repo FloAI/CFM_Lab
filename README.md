@@ -21,7 +21,7 @@ pip install numpy pandas torch scikit-learn tqdm matplotlib seaborn
 Clone the repository and install the package in editable mode:
 
 ```bash
-git clone https://github.com/yourusername/CFM_Lab.git
+git clone https://github.com/FloAI/CFM_Lab.git
 cd CFM_Lab
 pip install -e .
 
