@@ -1,14 +1,3 @@
-Based on a detailed review of the provided source code files (`losses.py`, `paths.py`, `coupling.py`, `config.py`), there are **three significant features** present in the code that were missing or under-detailed in the previous README draft.
-
-To make the documentation truly complete and reflective of the library's "Scientific" capabilities, we should add:
-
-1. **Specialized Loss Functions (`losses.py`):** The code includes robust losses (`huber`, `tukey`) and bio-specific losses (`poisson`, `zero_inflated`) which are critical for count data but were not listed.
-2. **Prior Distributions (`coupling.py`):** The code supports `dirichlet` (for compositional data/simplex) and `empirical` priors, not just Gaussian.
-3. **Advanced Paths (`paths.py`):** The code implements `spherical` and `ot_displacement` interpolants which are useful for specific geometric constraints.
-
-Here is the updated, **fully comprehensive** README that includes these details while maintaining the professional tone.
-
----
 
 # CFM_Lab
 
