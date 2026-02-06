@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cfm-lab"
+version = "0.1.0"
+description = "Conditional Flow Matching for Tabular Data"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [{name = "Flore N'kam suguem", email = "nkamflore@gmail.com"}]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Bioinformatics",
+]
+dependencies = [
+    "torch>=1.13.0",
+    "numpy>=1.21.0",
+    "pandas>=1.3.0",
+    "scikit-learn>=1.0.0",
+    "tqdm>=4.64.0",
+    "matplotlib>=3.5.0",
+    "seaborn>=0.11.0"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0.0", "build", "twine", "mkdocs"]
+
+[project.scripts]
+cfm-lab = "CFM_Lab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["CFM_Lab*"]
