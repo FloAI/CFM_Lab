@@ -63,7 +63,7 @@ def generate_samples_from_csv(
     
     # 6. Evaluate
     if evaluate:
-        print("📊 Running Evaluation...")
+        print("Running Evaluation...")
         import pandas as pd
         real_df = pd.DataFrame(x_train, columns=col_names)
         syn_df = pd.DataFrame(samples, columns=col_names)
