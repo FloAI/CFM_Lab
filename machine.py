@@ -27,7 +27,7 @@ class CFMMachine:
 
     def train(self, loader, val_loader=None):
         self.model.train()
-        print(f"🚀 Training on {self.device}...")
+        print(f" Training on {self.device}...")
         
         for epoch in range(self.cfg.epochs):
             epoch_loss = 0
